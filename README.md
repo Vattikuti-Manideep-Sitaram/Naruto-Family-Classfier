@@ -13,8 +13,6 @@ short_description: Classifies Naruto, Boruto, Minato Images
 
 # Naruto or Boruto or Minato Classifier
 
-![Naruto slurping ramen like a champ](https://media4.giphy.com/media/itJhWF0zY5zcY/giphy.gif)
-
 Welcome to the village hidden in the GPU. This project trains a fastai vision model that can tell if a picture features Naruto Uzumaki, Boruto Uzumaki, or Minato Namikaze. Feed it your favorite frames, fan-art, or memes and it will yell the right Hokage name faster than Naruto can say "dattebayo".
 
 ## TL;DR (Too Long; Dattebayo!)
