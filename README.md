@@ -1,6 +1,6 @@
----
+﻿---
 title: Naruto Family Classifier
-emoji: 🌍
+emoji: ":earth_asia:"
 colorFrom: gray
 colorTo: green
 sdk: gradio
@@ -13,47 +13,49 @@ short_description: Classifies Naruto, Boruto, Minato Images
 
 # Naruto or Boruto or Minato Classifier
 
-![Naruto celebrates ramen victory](https://media4.giphy.com/media/itJhWF0zY5zcY/giphy.gif)
+![Naruto slurping ramen like a champ](https://media4.giphy.com/media/itJhWF0zY5zcY/giphy.gif)
 
-Believe it! This repo trains a cheeky little model that looks at a single frame of anime glory and shouts whether it spotted Naruto, Boruto, or Minato. It is powered by fastai and wrapped in a Gradio app so your friends can spam meme images until the Hokage Tower collapses.
+Welcome to the village hidden in the GPU. This project trains a fastai vision model that can tell if a picture features Naruto Uzumaki, Boruto Uzumaki, or Minato Namikaze. Feed it your favorite frames, fan-art, or memes and it will yell the right Hokage name faster than Naruto can say "dattebayo".
 
-## Why you might summon this jutsu
-- Rapid-fire character ID for your stash of reaction gifs
-- Ramen shop loyalty program verification (Naruto only, sorry Boruto)
-- Shrugs off low-effort cosplay shots faster than Kakashi late to class
+## TL;DR (Too Long; Dattebayo!)
+- One-stop classifier for the most chaotic ninja family.
+- Ships with a Gradio interface so you can share it with your squad instantly.
+- Exported `model.pkl` lets you drop the brain straight into any fastai-powered deployment.
 
-## Gallery of Goofs
-![Boruto caught skipping training](https://media3.giphy.com/media/CWj2gGZbfV1igevrmY/giphy.gif)
-![Minato speed-running bedtime stories](https://media1.giphy.com/media/3ov9jP09WyYr2G4OY8/giphy.gif)
+## How the jutsu works
+- **Training dojo:** fastai `vision_learner` fine-tuned on curated images of Naruto, Boruto, and Minato.
+- **Augmentations:** flips, rotations, lighting chaos, and a sprinkle of ninja smoke to keep the model sharp.
+- **Interface:** `gradio_interface.py` powers a simple upload-and-predict UI.
+- **Export:** `model.pkl` (and `export1.pkl` if you prefer) contains the trained weights ready for inference.
 
-## Quick start
-1. Create an environment: <code>python -m venv venv && venv/Scripts/activate</code>
-2. Install the goods: <code>pip install -r requirements.txt</code>
-3. Launch the Gradio portal: <code>python app.py</code>
-4. Drop in an image and let the model flex its chakra control.
+## Summon the classifier
+1. Create a virtual environment: `python -m venv venv && venv/Scripts/activate`
+2. Install dependencies: `pip install -r requirements.txt`
+3. Launch the app: `python gradio_interface.py`
+4. Drop in an image, wait for the chakra to flow, admire the prediction.
 
-## Model ramen notes
-- Based on a fastai <code>vision_learner</code> fine-tuned on a handcrafted Naruto family dataset.
-- Training tips: rely on heavy augmentations (flip, warp, contrast) so the model laughs at dramatic lighting.
-- Feel free to fine-tune with your own clan portraits by swapping out the image folder path and re-running the notebook.
+## Legendary quotes to keep morale high
+> "Naruto: I never go back on my word. That is my nindo... and also why this README is extra long."
+>
+> "Boruto: Dad, did you seriously train a classifier to keep spying on me?"
+>
+> "Minato: I sealed the Nine-Tails, I can definitely seal this model into a pickle file."
+>
+> "Kakashi (probably): Remember kids, even Sharingan can't beat good data augmentation."
 
-## Project structure cheat sheet
-- <code>app.py</code> – Gradio UI, auto-downloads the exported learner.
-- <code>export.pkl</code> – Fastai learner with all the sage wisdom baked in.
-- <code>requirements.txt</code> – Everything you need except Ichiraku coupons.
-- <code>01_intro.ipynb</code>, <code>main.ipynb</code>, <code>model_pkl_test.ipynb</code> – Notebooks for training, testing, and poking the model with kunai.
+## Project map
+- `gradio_interface.py` - Launches the Gradio UI and downloads the exported learner if needed.
+- `model.pkl` / `export1.pkl` - fastai learners with all the Hokage know-how baked in.
+- `main.ipynb` - end-to-end training notebook (data prep, fine-tune, export).
+- `model_pkl_test.ipynb` - sanity checks and inference experiments.
+- `naruto_or_boruto_or_minato/` - helper scripts and dataset utilities.
 
-## Deploy like a shinobi
-- Hugging Face Space friendly (see front-matter on top).
-- GitHub ready: you can ship to any cloud ninja village that reads a <code>requirements.txt</code>.
-- For Docker fans, grab the dependencies and expose <code>7860</code> for a quick summoning ritual.
+## Tips for further training arc
+- Add Sarada, Himawari, or Jiraiya classes for a full Uzumaki extended universe.
+- Swap the backbone to a ViT and call it "Sage Mode Transformer".
+- Deploy on Hugging Face Spaces or a Discord bot so predictions can interrupt your friends at 3 AM.
 
-## Upgrade ideas
-- Add Sarada so someone finally keeps Boruto honest.
-- Swap the backbone to a vision transformer and call it "Sage Mode".
-- Build a Discord bot that posts Minato only when the chat needs dad jokes.
+## Credits and ramen fund
+All Naruto assets belong to their original creators. Please support the official release, tip your fan artists, and send ramen coupons to Ichiraku.
 
-## Credits
-Made with respect to the Naruto franchise. All gifs belong to their respective creators; consider tossing them some ramen money.
-
-Pull requests welcome—just keep them funnier than Naruto's shadow clone stand-up routine.
+Pull requests welcome, as long as you drop at least one Naruto quote in the description.
