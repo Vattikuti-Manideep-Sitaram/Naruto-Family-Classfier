@@ -1,16 +1,4 @@
-﻿---
-title: Naruto Family Classifier
-emoji: ":earth_asia:"
-colorFrom: gray
-colorTo: green
-sdk: gradio
-sdk_version: 5.49.0
-app_file: app.py
-pinned: false
-license: apache-2.0
-short_description: Classifies Naruto, Boruto, Minato Images
----
-
+﻿
 # Naruto or Boruto or Minato Classifier
 
 Welcome to the village hidden in the GPU. This project trains a fastai vision model that can tell if a picture features Naruto Uzumaki, Boruto Uzumaki, or Minato Namikaze. Feed it your favorite frames, fan-art, or memes and it will yell the right Hokage name faster than Naruto can say "dattebayo".
